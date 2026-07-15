@@ -1,0 +1,10 @@
+.vs/
+.idea/
+bin/
+obj/
+artifacts/
+publish/
+*.user
+*.suo
+*.log
+*.zip

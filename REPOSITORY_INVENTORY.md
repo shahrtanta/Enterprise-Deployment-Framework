@@ -1,0 +1,26 @@
+# Repository Inventory
+
+- `.gitignore`
+- `CHANGELOG.md`
+- `CONTRIBUTING.md`
+- `LICENSE`
+- `README.md`
+- `ROADMAP.md`
+- `checklists/Project_Discovery_Checklist.md`
+- `checklists/Release_Checklist.md`
+- `diagrams/Deployment_Flow.md`
+- `docs/architecture/Architecture_Standard.md`
+- `docs/database/Database_Standard.md`
+- `docs/deployment/Offline_Deployment.md`
+- `docs/deployment/Publish_Standard.md`
+- `docs/installer/Inno_Setup_Standard.md`
+- `docs/master-prompt/AI_Rules.md`
+- `docs/master-prompt/Decision_Engine.md`
+- `docs/master-prompt/Enterprise_Master_Prompt.md`
+- `docs/master-prompt/Execution_Workflow.md`
+- `docs/operations/Diagnostics_and_Repair.md`
+- `docs/security/Security_Standard.md`
+- `examples/README.md`
+- `templates/configuration/appsettings.Production.example.json`
+- `templates/installer/installer.iss`
+- `templates/publish/publish.ps1`
