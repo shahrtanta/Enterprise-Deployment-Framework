@@ -27,7 +27,7 @@ EDF covers architecture, offline publishing, Windows installation, database boot
 
 ## Status
 
-Version 0.3.0 adds deployable configuration and database-testing tools plus a database-aware Inno Setup wizard.
+Version 0.4.0 adds executable diagnostics, sanitized support bundles, conservative repair operations, and automated core tests.
 
 ## Current implementation
 
@@ -40,3 +40,9 @@ Version 0.3.0 adds deployable configuration and database-testing tools plus a da
 - `templates/tools/Product.ConfigTool`: safe runtime JSON configuration writer.
 - `templates/tools/Product.DbConnectionTester`: silent SQL Server and LocalDB tester.
 - `templates/installer/installer.iss`: database wizard with Test Connection.
+
+## v0.4 implementation
+
+- `templates/tools/Product.Diagnostics`
+- `templates/tools/Product.Repair`
+- `templates/tools/Product.Deployment.Core.Tests`

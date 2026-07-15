@@ -25,6 +25,8 @@ SetupLogging=yes
 Source: "..\..\artifacts\publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\..\artifacts\tools\Product.ConfigTool.exe"; DestDir: "{app}\Tools"; Flags: ignoreversion
 Source: "..\..\artifacts\tools\Product.DbConnectionTester.exe"; DestDir: "{app}\Tools"; Flags: ignoreversion
+Source: "..\..\artifacts\tools\Product.Diagnostics.exe"; DestDir: "{app}\Tools"; Flags: ignoreversion
+Source: "..\..\artifacts\tools\Product.Repair.exe"; DestDir: "{app}\Tools"; Flags: ignoreversion
 Source: "prerequisites\*"; DestDir: "{tmp}\prerequisites"; Flags: ignoreversion recursesubdirs createallsubdirs skipifsourcedoesntexist
 
 [Tasks]

@@ -1,4 +1,4 @@
-# Repository Inventory — v0.3.0
+# Repository Inventory — v0.4.0
 
 - `.github/workflows/validate-framework.yml`
 - `.gitignore`
@@ -10,6 +10,7 @@
 - `ROADMAP.md`
 - `checklists/AppLauncher_Checklist.md`
 - `checklists/Database_Wizard_Checklist.md`
+- `checklists/Diagnostics_Repair_Checklist.md`
 - `checklists/Project_Discovery_Checklist.md`
 - `checklists/Release_Checklist.md`
 - `diagrams/Deployment_Flow.md`
@@ -23,7 +24,9 @@
 - `docs/master-prompt/Decision_Engine.md`
 - `docs/master-prompt/Enterprise_Master_Prompt.md`
 - `docs/master-prompt/Execution_Workflow.md`
+- `docs/operations/Diagnostics_Standard.md`
 - `docs/operations/Diagnostics_and_Repair.md`
+- `docs/operations/Repair_Standard.md`
 - `docs/release/Versioning_and_Releases.md`
 - `docs/security/Security_Standard.md`
 - `docs/tools/Configuration_Tool.md`
@@ -49,10 +52,23 @@
 - `templates/tools/Product.DbConnectionTester/README.md`
 - `templates/tools/Product.DbConnectionTester/RequestMapper.cs`
 - `templates/tools/Product.DbConnectionTester/SqlConnectionTester.cs`
+- `templates/tools/Product.Deployment.Core.Tests/CoreTests.cs`
+- `templates/tools/Product.Deployment.Core.Tests/Product.Deployment.Core.Tests.csproj`
 - `templates/tools/Product.Deployment.Core/AtomicJsonConfigurationWriter.cs`
 - `templates/tools/Product.Deployment.Core/ConnectionStringFactory.cs`
 - `templates/tools/Product.Deployment.Core/DeploymentModels.cs`
 - `templates/tools/Product.Deployment.Core/InstallerIni.cs`
 - `templates/tools/Product.Deployment.Core/Product.Deployment.Core.csproj`
 - `templates/tools/Product.DeploymentTools.sln`
+- `templates/tools/Product.DeploymentTools.slnx`
+- `templates/tools/Product.Diagnostics/DiagnosticOptions.cs`
+- `templates/tools/Product.Diagnostics/DiagnosticRunner.cs`
+- `templates/tools/Product.Diagnostics/Models.cs`
+- `templates/tools/Product.Diagnostics/Product.Diagnostics.csproj`
+- `templates/tools/Product.Diagnostics/Program.cs`
+- `templates/tools/Product.Diagnostics/README.md`
+- `templates/tools/Product.Diagnostics/SupportBundleWriter.cs`
+- `templates/tools/Product.Repair/Product.Repair.csproj`
+- `templates/tools/Product.Repair/Program.cs`
+- `templates/tools/Product.Repair/README.md`
 - `templates/validation/Test-PublishArtifact.ps1`

@@ -9,10 +9,16 @@
 - ConfigTool and DbConnectionTester.
 - Extended Inno Setup database wizard.
 
-## 0.4
+## 0.4 — Completed
 - Diagnostics and Repair tools.
 - Sanitized support bundle.
 - Folder and permission health checks.
+- Automated tests.
+
+## 0.5
+- Backup and restore tooling.
+- Migration runner.
+- Update manifest and rollback engine.
 
 ## 0.3
 - Diagnostics and Repair tools.

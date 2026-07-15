@@ -10,21 +10,24 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-      - name: Build AppLauncher template
+      - name: Build AppLauncher
         shell: pwsh
         run: dotnet build .\templates\launcher\Product.AppLauncher\Product.AppLauncher.csproj -c Release
-      - name: Build deployment tools
+      - name: Restore tools
         shell: pwsh
-        run: dotnet build .\templates\tools\Product.DeploymentTools.sln -c Release
-      - name: Validate PowerShell syntax
+        run: dotnet restore .\templates\tools\Product.DeploymentTools.slnx
+      - name: Build tools
+        shell: pwsh
+        run: dotnet build .\templates\tools\Product.DeploymentTools.slnx -c Release --no-restore
+      - name: Test core
+        shell: pwsh
+        run: dotnet test .\templates\tools\Product.Deployment.Core.Tests\Product.Deployment.Core.Tests.csproj -c Release --no-build
+      - name: Validate PowerShell
         shell: pwsh
         run: |
-          $scripts = Get-ChildItem -Recurse -Filter *.ps1
-          foreach ($script in $scripts) {
-            [void][scriptblock]::Create((Get-Content $script.FullName -Raw))
-            Write-Host "Valid: $($script.FullName)"
+          Get-ChildItem -Recurse -Filter *.ps1 | ForEach-Object {
+            [void][scriptblock]::Create((Get-Content $_.FullName -Raw))
           }

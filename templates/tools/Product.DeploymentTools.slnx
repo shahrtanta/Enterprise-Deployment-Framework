@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Product.Deployment.Core/Product.Deployment.Core.csproj" />
+  <Project Path="Product.ConfigTool/Product.ConfigTool.csproj" />
+  <Project Path="Product.DbConnectionTester/Product.DbConnectionTester.csproj" />
+  <Project Path="Product.Diagnostics/Product.Diagnostics.csproj" />
+  <Project Path="Product.Repair/Product.Repair.csproj" />
+  <Project Path="Product.Deployment.Core.Tests/Product.Deployment.Core.Tests.csproj" />
+</Solution>

@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.4.0 - 2026-07-15
+
+### Added
+
+- Product.Diagnostics.
+- Sanitized support ZIP.
+- Product.Repair with dry-run.
+- Folder, configuration, temp, network, health, database, disk, and log checks.
+- Automated deployment-core tests.
+- `.slnx` for all tools.
+- CI restore, build, and test stages.
+- Diagnostics and Repair standards and checklist.
+
 ## 0.3.0 - 2026-07-15
 
 ### Added
