@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.6.0 - 2026-07-15
+
+### Added
+
+- End-to-end ASP.NET Core MVC reference application.
+- ProgramData directory bootstrap.
+- Runtime JSON loading and atomic configuration.
+- First-run middleware.
+- Database selection, connection testing, review, and completion flow.
+- Health endpoint and loopback hosting.
+- Local CSS and JavaScript assets.
+- Reference publish script.
+- Clean first-run smoke-test script.
+- CI build validation for the reference application.
+- Reference integration guide and checklist.
+
 ## 0.5.0 - 2026-07-15
 
 ### Added

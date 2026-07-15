@@ -1,4 +1,4 @@
-# Repository Inventory — v0.5.0
+# Repository Inventory — v0.6.0
 
 - `.github/workflows/validate-framework.yml`
 - `.gitignore`
@@ -13,12 +13,14 @@
 - `checklists/Database_Wizard_Checklist.md`
 - `checklists/Diagnostics_Repair_Checklist.md`
 - `checklists/Project_Discovery_Checklist.md`
+- `checklists/Reference_Application_Checklist.md`
 - `checklists/Release_Checklist.md`
 - `diagrams/Deployment_Flow.md`
 - `docs/architecture/Architecture_Standard.md`
 - `docs/database/Database_Standard.md`
 - `docs/deployment/Offline_Deployment.md`
 - `docs/deployment/Publish_Standard.md`
+- `docs/deployment/Reference_Application_Standard.md`
 - `docs/installer/Inno_Setup_Standard.md`
 - `docs/launcher/AppLauncher_Standard.md`
 - `docs/master-prompt/AI_Rules.md`
@@ -35,6 +37,35 @@
 - `docs/security/Security_Standard.md`
 - `docs/tools/Configuration_Tool.md`
 - `docs/tools/Database_Connection_Tester.md`
+- `examples/AspNetCoreMvc.Reference/Product.Reference.slnx`
+- `examples/AspNetCoreMvc.Reference/README.md`
+- `examples/AspNetCoreMvc.Reference/docs/INTEGRATION_GUIDE.md`
+- `examples/AspNetCoreMvc.Reference/installer/README.md`
+- `examples/AspNetCoreMvc.Reference/scripts/publish-reference.ps1`
+- `examples/AspNetCoreMvc.Reference/scripts/smoke-test.ps1`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Controllers/HomeController.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Controllers/SetupController.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Middleware/FirstRunMiddleware.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Models/SetupDatabaseModel.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Models/SetupReviewModel.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Product.Reference.Web.csproj`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Program.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Services/BootstrapPaths.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Services/ConnectionStringBuilderService.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Services/DatabaseHealthService.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Services/DirectoryBootstrap.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Services/RuntimeConfigurationService.cs`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/Home/Error.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/Home/Index.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/Setup/Index.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/Setup/Review.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/Shared/_Layout.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/_ViewImports.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/Views/_ViewStart.cshtml`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/appsettings.Production.json`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/appsettings.json`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/wwwroot/css/site.css`
+- `examples/AspNetCoreMvc.Reference/src/Product.Reference.Web/wwwroot/js/site.js`
 - `examples/README.md`
 - `templates/configuration/appsettings.Production.example.json`
 - `templates/installer/installer.iss`

@@ -20,11 +20,16 @@
 - Migration runner.
 - Update manifest and rollback engine.
 
-## 0.6
+## 0.6 — Completed
 - End-to-end ASP.NET Core MVC reference application.
 - First-run wizard reference implementation.
-- Installer compilation workflow.
-- Clean-machine smoke-test scripts.
+- Reference publish and smoke-test scripts.
+
+## 0.7
+- Automated Inno Setup compilation workflow.
+- Installer smoke tests in Windows Sandbox.
+- LocalDB prerequisite packaging guide.
+- AppLauncher integration test.
 
 ## 0.3
 - Diagnostics and Repair tools.

@@ -27,7 +27,7 @@ EDF covers architecture, offline publishing, Windows installation, database boot
 
 ## Status
 
-Version 0.5.0 adds SQL Server backup/restore, hash-tracked migration execution, and a verified offline update/rollback engine.
+Version 0.6.0 adds an end-to-end ASP.NET Core MVC reference application with a first-run wizard, runtime configuration, health checks, and smoke-test scripts.
 
 ## Current implementation
 
@@ -52,3 +52,10 @@ Version 0.5.0 adds SQL Server backup/restore, hash-tracked migration execution, 
 - `templates/tools/Product.BackupRestore`
 - `templates/tools/Product.MigrationRunner`
 - `templates/tools/Product.Update`
+
+## v0.6 implementation
+
+- `examples/AspNetCoreMvc.Reference`
+- First-run database wizard.
+- Runtime configuration outside Program Files.
+- Reference publish and smoke-test scripts.

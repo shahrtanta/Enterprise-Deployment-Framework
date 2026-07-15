@@ -1,0 +1,81 @@
+@model SetupDatabaseModel
+@{
+    ViewData["Title"] = "First Run Setup";
+}
+
+<section class="card">
+    <span class="badge">First-run wizard</span>
+    <h1>Configure the database</h1>
+    <p>Select a local database or an internal SQL Server.</p>
+
+    <form asp-action="Review" method="post" id="setup-form">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="validation"></div>
+
+        <fieldset class="choice-grid">
+            <label class="choice">
+                <input asp-for="DatabaseType" type="radio" value="Local" checked />
+                <span>
+                    <strong>Local database</strong>
+                    <small>Single-computer offline deployment using LocalDB.</small>
+                </span>
+            </label>
+
+            <label class="choice">
+                <input asp-for="DatabaseType" type="radio" value="InternalServer" />
+                <span>
+                    <strong>Internal SQL Server</strong>
+                    <small>Company server, SQL Express, or network instance.</small>
+                </span>
+            </label>
+        </fieldset>
+
+        <div class="form-grid">
+            <label>
+                Database name
+                <input asp-for="DatabaseName" />
+                <span asp-validation-for="DatabaseName"></span>
+            </label>
+
+            <label class="server-only">
+                Server / instance
+                <input asp-for="ServerName" />
+            </label>
+
+            <label class="server-only">
+                Authentication
+                <select asp-for="AuthenticationType" id="authentication">
+                    <option value="Windows">Windows Authentication</option>
+                    <option value="SqlServer">SQL Server Authentication</option>
+                </select>
+            </label>
+
+            <label class="sql-auth-only">
+                User name
+                <input asp-for="UserName" />
+            </label>
+
+            <label class="sql-auth-only">
+                Password
+                <input asp-for="Password" />
+            </label>
+        </div>
+
+        <div class="actions">
+            <button type="button" class="secondary" id="test-connection">
+                Test Connection
+            </button>
+            <button type="submit">Review Setup</button>
+        </div>
+
+        <p id="test-result" class="status"></p>
+    </form>
+</section>
+
+@section Scripts {
+<script>
+    window.setupWizard.initialize({
+        testUrl: '@Url.Action("TestConnection", "Setup")'
+    });
+</script>
+}

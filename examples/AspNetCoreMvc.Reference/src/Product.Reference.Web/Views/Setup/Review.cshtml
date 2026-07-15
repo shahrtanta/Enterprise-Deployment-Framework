@@ -1,0 +1,42 @@
+@model SetupReviewModel
+@{
+    ViewData["Title"] = "Review Setup";
+}
+
+<section class="card">
+    <span class="badge">Review</span>
+    <h1>Confirm the deployment settings</h1>
+
+    <dl class="details">
+        <dt>Data root</dt>
+        <dd><code>@Model.DataRoot</code></dd>
+
+        <dt>Runtime configuration</dt>
+        <dd><code>@Model.RuntimeConfigurationPath</code></dd>
+
+        <dt>Port</dt>
+        <dd>@Model.Port</dd>
+
+        <dt>Database type</dt>
+        <dd>@Model.DatabaseType</dd>
+
+        <dt>Database</dt>
+        <dd>@Model.DatabaseName</dd>
+
+        <dt>Server</dt>
+        <dd>@(Model.DatabaseType == "Local" ? "(LocalDB)\\MSSQLLocalDB" : Model.ServerName)</dd>
+
+        <dt>Authentication</dt>
+        <dd>@Model.AuthenticationType</dd>
+    </dl>
+
+    <div asp-validation-summary="ModelOnly" class="validation"></div>
+
+    <div class="actions">
+        <a asp-action="Index" class="button secondary">Back</a>
+        <form asp-action="Complete" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit">Complete Setup</button>
+        </form>
+    </div>
+</section>

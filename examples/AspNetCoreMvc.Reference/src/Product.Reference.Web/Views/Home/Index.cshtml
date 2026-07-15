@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Ready";
+}
+
+<section class="card hero">
+    <span class="badge success">Setup complete</span>
+    <h1>The reference application is running.</h1>
+    <p>The application was configured using the first-run wizard.</p>
+
+    <dl class="details">
+        <dt>Data root</dt>
+        <dd><code>@ViewData["DataRoot"]</code></dd>
+        <dt>Health endpoint</dt>
+        <dd><code>/health</code></dd>
+    </dl>
+</section>
