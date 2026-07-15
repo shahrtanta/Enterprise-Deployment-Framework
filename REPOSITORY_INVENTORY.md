@@ -1,4 +1,4 @@
-# Repository Inventory — v0.2.0
+# Repository Inventory — v0.3.0
 
 - `.github/workflows/validate-framework.yml`
 - `.gitignore`
@@ -9,6 +9,7 @@
 - `REPOSITORY_INVENTORY.md`
 - `ROADMAP.md`
 - `checklists/AppLauncher_Checklist.md`
+- `checklists/Database_Wizard_Checklist.md`
 - `checklists/Project_Discovery_Checklist.md`
 - `checklists/Release_Checklist.md`
 - `diagrams/Deployment_Flow.md`
@@ -25,6 +26,8 @@
 - `docs/operations/Diagnostics_and_Repair.md`
 - `docs/release/Versioning_and_Releases.md`
 - `docs/security/Security_Standard.md`
+- `docs/tools/Configuration_Tool.md`
+- `docs/tools/Database_Connection_Tester.md`
 - `examples/README.md`
 - `templates/configuration/appsettings.Production.example.json`
 - `templates/installer/installer.iss`
@@ -37,4 +40,19 @@
 - `templates/launcher/Product.AppLauncher/ServerManager.cs`
 - `templates/launcher/Product.AppLauncher/TrayApplicationContext.cs`
 - `templates/publish/publish.ps1`
+- `templates/tools/Product.ConfigTool/InstallerConfigurationMapper.cs`
+- `templates/tools/Product.ConfigTool/Product.ConfigTool.csproj`
+- `templates/tools/Product.ConfigTool/Program.cs`
+- `templates/tools/Product.ConfigTool/README.md`
+- `templates/tools/Product.DbConnectionTester/Product.DbConnectionTester.csproj`
+- `templates/tools/Product.DbConnectionTester/Program.cs`
+- `templates/tools/Product.DbConnectionTester/README.md`
+- `templates/tools/Product.DbConnectionTester/RequestMapper.cs`
+- `templates/tools/Product.DbConnectionTester/SqlConnectionTester.cs`
+- `templates/tools/Product.Deployment.Core/AtomicJsonConfigurationWriter.cs`
+- `templates/tools/Product.Deployment.Core/ConnectionStringFactory.cs`
+- `templates/tools/Product.Deployment.Core/DeploymentModels.cs`
+- `templates/tools/Product.Deployment.Core/InstallerIni.cs`
+- `templates/tools/Product.Deployment.Core/Product.Deployment.Core.csproj`
+- `templates/tools/Product.DeploymentTools.sln`
 - `templates/validation/Test-PublishArtifact.ps1`

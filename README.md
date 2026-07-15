@@ -27,10 +27,16 @@ EDF covers architecture, offline publishing, Windows installation, database boot
 
 ## Status
 
-Version 0.2.0 adds the first executable reference implementation: a production-oriented Windows AppLauncher, publish validation, and CI checks.
+Version 0.3.0 adds deployable configuration and database-testing tools plus a database-aware Inno Setup wizard.
 
 ## Current implementation
 
 - `templates/launcher/Product.AppLauncher`: compilable .NET 8 WinForms launcher.
 - `templates/validation/Test-PublishArtifact.ps1`: offline artifact validator.
 - `.github/workflows/validate-framework.yml`: automated template validation.
+
+## v0.3 implementation
+
+- `templates/tools/Product.ConfigTool`: safe runtime JSON configuration writer.
+- `templates/tools/Product.DbConnectionTester`: silent SQL Server and LocalDB tester.
+- `templates/installer/installer.iss`: database wizard with Test Connection.

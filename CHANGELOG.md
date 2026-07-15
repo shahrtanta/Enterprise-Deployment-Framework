@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.3.0 - 2026-07-15
+
+### Added
+
+- Shared deployment configuration core.
+- Atomic JSON writer.
+- ConfigTool silent installer interface.
+- DbConnectionTester for SQL Server and LocalDB.
+- Structured request and result files.
+- Database-aware Inno Setup wizard.
+- Conditional authentication controls.
+- Database tool standards and checklist.
+- CI validation for deployment tools.
+
 ## 0.2.0 - 2026-07-15
 
 ### Added

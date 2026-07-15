@@ -8,20 +8,18 @@ on:
 jobs:
   validate:
     runs-on: windows-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
-
       - name: Build AppLauncher template
         shell: pwsh
-        run: |
-          dotnet build .\templates\launcher\Product.AppLauncher\Product.AppLauncher.csproj -c Release
-
+        run: dotnet build .\templates\launcher\Product.AppLauncher\Product.AppLauncher.csproj -c Release
+      - name: Build deployment tools
+        shell: pwsh
+        run: dotnet build .\templates\tools\Product.DeploymentTools.sln -c Release
       - name: Validate PowerShell syntax
         shell: pwsh
         run: |

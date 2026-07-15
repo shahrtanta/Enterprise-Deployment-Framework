@@ -5,10 +5,14 @@
 - Automated artifact validation.
 - GitHub Actions validation.
 
-## 0.3
+## 0.3 — Completed
 - ConfigTool and DbConnectionTester.
 - Extended Inno Setup database wizard.
+
+## 0.4
 - Diagnostics and Repair tools.
+- Sanitized support bundle.
+- Folder and permission health checks.
 
 ## 0.3
 - Diagnostics and Repair tools.
