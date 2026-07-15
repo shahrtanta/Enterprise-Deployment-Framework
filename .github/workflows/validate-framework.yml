@@ -8,23 +8,37 @@ on:
 jobs:
   validate:
     runs-on: windows-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
+
       - name: Build AppLauncher
         shell: pwsh
         run: dotnet build .\templates\launcher\Product.AppLauncher\Product.AppLauncher.csproj -c Release
-      - name: Restore tools
+
+      - name: Restore deployment tools
         shell: pwsh
         run: dotnet restore .\templates\tools\Product.DeploymentTools.slnx
-      - name: Build tools
+
+      - name: Build deployment tools
         shell: pwsh
         run: dotnet build .\templates\tools\Product.DeploymentTools.slnx -c Release --no-restore
-      - name: Test core
+
+      - name: Run tests
         shell: pwsh
         run: dotnet test .\templates\tools\Product.Deployment.Core.Tests\Product.Deployment.Core.Tests.csproj -c Release --no-build
+
+      - name: Validate JSON
+        shell: pwsh
+        run: |
+          Get-ChildItem -Recurse -Filter *.json | ForEach-Object {
+            Get-Content $_.FullName -Raw | ConvertFrom-Json | Out-Null
+          }
+
       - name: Validate PowerShell
         shell: pwsh
         run: |

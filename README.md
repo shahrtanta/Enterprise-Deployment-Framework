@@ -27,7 +27,7 @@ EDF covers architecture, offline publishing, Windows installation, database boot
 
 ## Status
 
-Version 0.4.0 adds executable diagnostics, sanitized support bundles, conservative repair operations, and automated core tests.
+Version 0.5.0 adds SQL Server backup/restore, hash-tracked migration execution, and a verified offline update/rollback engine.
 
 ## Current implementation
 
@@ -46,3 +46,9 @@ Version 0.4.0 adds executable diagnostics, sanitized support bundles, conservati
 - `templates/tools/Product.Diagnostics`
 - `templates/tools/Product.Repair`
 - `templates/tools/Product.Deployment.Core.Tests`
+
+## v0.5 implementation
+
+- `templates/tools/Product.BackupRestore`
+- `templates/tools/Product.MigrationRunner`
+- `templates/tools/Product.Update`

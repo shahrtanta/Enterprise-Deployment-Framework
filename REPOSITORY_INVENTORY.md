@@ -1,4 +1,4 @@
-# Repository Inventory — v0.4.0
+# Repository Inventory — v0.5.0
 
 - `.github/workflows/validate-framework.yml`
 - `.gitignore`
@@ -9,6 +9,7 @@
 - `REPOSITORY_INVENTORY.md`
 - `ROADMAP.md`
 - `checklists/AppLauncher_Checklist.md`
+- `checklists/Backup_Migration_Update_Checklist.md`
 - `checklists/Database_Wizard_Checklist.md`
 - `checklists/Diagnostics_Repair_Checklist.md`
 - `checklists/Project_Discovery_Checklist.md`
@@ -24,9 +25,12 @@
 - `docs/master-prompt/Decision_Engine.md`
 - `docs/master-prompt/Enterprise_Master_Prompt.md`
 - `docs/master-prompt/Execution_Workflow.md`
+- `docs/operations/Backup_Restore_Standard.md`
 - `docs/operations/Diagnostics_Standard.md`
 - `docs/operations/Diagnostics_and_Repair.md`
+- `docs/operations/Migration_Standard.md`
 - `docs/operations/Repair_Standard.md`
+- `docs/operations/Update_Rollback_Standard.md`
 - `docs/release/Versioning_and_Releases.md`
 - `docs/security/Security_Standard.md`
 - `docs/tools/Configuration_Tool.md`
@@ -43,6 +47,11 @@
 - `templates/launcher/Product.AppLauncher/ServerManager.cs`
 - `templates/launcher/Product.AppLauncher/TrayApplicationContext.cs`
 - `templates/publish/publish.ps1`
+- `templates/tools/Product.BackupRestore/BackupOptions.cs`
+- `templates/tools/Product.BackupRestore/Product.BackupRestore.csproj`
+- `templates/tools/Product.BackupRestore/Program.cs`
+- `templates/tools/Product.BackupRestore/README.md`
+- `templates/tools/Product.BackupRestore/SqlBackupService.cs`
 - `templates/tools/Product.ConfigTool/InstallerConfigurationMapper.cs`
 - `templates/tools/Product.ConfigTool/Product.ConfigTool.csproj`
 - `templates/tools/Product.ConfigTool/Program.cs`
@@ -68,7 +77,19 @@
 - `templates/tools/Product.Diagnostics/Program.cs`
 - `templates/tools/Product.Diagnostics/README.md`
 - `templates/tools/Product.Diagnostics/SupportBundleWriter.cs`
+- `templates/tools/Product.MigrationRunner/MigrationEngine.cs`
+- `templates/tools/Product.MigrationRunner/MigrationModels.cs`
+- `templates/tools/Product.MigrationRunner/Product.MigrationRunner.csproj`
+- `templates/tools/Product.MigrationRunner/Program.cs`
+- `templates/tools/Product.MigrationRunner/README.md`
+- `templates/tools/Product.MigrationRunner/Samples/001_create_example_table.sql`
 - `templates/tools/Product.Repair/Product.Repair.csproj`
 - `templates/tools/Product.Repair/Program.cs`
 - `templates/tools/Product.Repair/README.md`
+- `templates/tools/Product.Update/Product.Update.csproj`
+- `templates/tools/Product.Update/Program.cs`
+- `templates/tools/Product.Update/README.md`
+- `templates/tools/Product.Update/Samples/update-manifest.example.json`
+- `templates/tools/Product.Update/UpdateEngine.cs`
+- `templates/tools/Product.Update/UpdateManifest.cs`
 - `templates/validation/Test-PublishArtifact.ps1`

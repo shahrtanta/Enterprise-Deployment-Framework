@@ -15,10 +15,16 @@
 - Folder and permission health checks.
 - Automated tests.
 
-## 0.5
+## 0.5 — Completed
 - Backup and restore tooling.
 - Migration runner.
 - Update manifest and rollback engine.
+
+## 0.6
+- End-to-end ASP.NET Core MVC reference application.
+- First-run wizard reference implementation.
+- Installer compilation workflow.
+- Clean-machine smoke-test scripts.
 
 ## 0.3
 - Diagnostics and Repair tools.

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.0 - 2026-07-15
+
+### Added
+
+- SQL Server backup, verification, retention, and restore tool.
+- Explicit restore confirmation and multi-user recovery.
+- Ordered SQL migration runner.
+- Migration SHA-256 history validation.
+- Transactional migration execution.
+- Offline update manifest and package SHA-256 verification.
+- Staging, binary rollback, and mutable-data exclusion.
+- Backup, migration, and update standards and checklist.
+- CI JSON validation.
+
 ## 0.4.0 - 2026-07-15
 
 ### Added

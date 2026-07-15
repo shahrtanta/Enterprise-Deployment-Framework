@@ -4,5 +4,8 @@
   <Project Path="Product.DbConnectionTester/Product.DbConnectionTester.csproj" />
   <Project Path="Product.Diagnostics/Product.Diagnostics.csproj" />
   <Project Path="Product.Repair/Product.Repair.csproj" />
+  <Project Path="Product.BackupRestore/Product.BackupRestore.csproj" />
+  <Project Path="Product.MigrationRunner/Product.MigrationRunner.csproj" />
+  <Project Path="Product.Update/Product.Update.csproj" />
   <Project Path="Product.Deployment.Core.Tests/Product.Deployment.Core.Tests.csproj" />
 </Solution>

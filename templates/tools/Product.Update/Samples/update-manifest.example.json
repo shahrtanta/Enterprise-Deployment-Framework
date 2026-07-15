@@ -1,0 +1,8 @@
+{
+  "Product": "Product",
+  "Version": "1.2.0",
+  "PackageFile": "Product-1.2.0.zip",
+  "Sha256": "REPLACE_WITH_SHA256",
+  "MinimumVersion": "1.0.0",
+  "ReleaseNotes": "Example offline update package."
+}
