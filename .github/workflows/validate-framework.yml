@@ -1,0 +1,32 @@
+name: Validate Framework
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Build AppLauncher template
+        shell: pwsh
+        run: |
+          dotnet build .\templates\launcher\Product.AppLauncher\Product.AppLauncher.csproj -c Release
+
+      - name: Validate PowerShell syntax
+        shell: pwsh
+        run: |
+          $scripts = Get-ChildItem -Recurse -Filter *.ps1
+          foreach ($script in $scripts) {
+            [void][scriptblock]::Create((Get-Content $script.FullName -Raw))
+            Write-Host "Valid: $($script.FullName)"
+          }

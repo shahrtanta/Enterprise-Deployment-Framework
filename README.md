@@ -27,4 +27,10 @@ EDF covers architecture, offline publishing, Windows installation, database boot
 
 ## Status
 
-Version 0.1.0 establishes the operational repository foundation.
+Version 0.2.0 adds the first executable reference implementation: a production-oriented Windows AppLauncher, publish validation, and CI checks.
+
+## Current implementation
+
+- `templates/launcher/Product.AppLauncher`: compilable .NET 8 WinForms launcher.
+- `templates/validation/Test-PublishArtifact.ps1`: offline artifact validator.
+- `.github/workflows/validate-framework.yml`: automated template validation.

@@ -1,11 +1,14 @@
-# Repository Inventory
+# Repository Inventory — v0.2.0
 
+- `.github/workflows/validate-framework.yml`
 - `.gitignore`
 - `CHANGELOG.md`
 - `CONTRIBUTING.md`
 - `LICENSE`
 - `README.md`
+- `REPOSITORY_INVENTORY.md`
 - `ROADMAP.md`
+- `checklists/AppLauncher_Checklist.md`
 - `checklists/Project_Discovery_Checklist.md`
 - `checklists/Release_Checklist.md`
 - `diagrams/Deployment_Flow.md`
@@ -14,13 +17,24 @@
 - `docs/deployment/Offline_Deployment.md`
 - `docs/deployment/Publish_Standard.md`
 - `docs/installer/Inno_Setup_Standard.md`
+- `docs/launcher/AppLauncher_Standard.md`
 - `docs/master-prompt/AI_Rules.md`
 - `docs/master-prompt/Decision_Engine.md`
 - `docs/master-prompt/Enterprise_Master_Prompt.md`
 - `docs/master-prompt/Execution_Workflow.md`
 - `docs/operations/Diagnostics_and_Repair.md`
+- `docs/release/Versioning_and_Releases.md`
 - `docs/security/Security_Standard.md`
 - `examples/README.md`
 - `templates/configuration/appsettings.Production.example.json`
 - `templates/installer/installer.iss`
+- `templates/launcher/Product.AppLauncher/LauncherLogger.cs`
+- `templates/launcher/Product.AppLauncher/LauncherOptions.cs`
+- `templates/launcher/Product.AppLauncher/LauncherPaths.cs`
+- `templates/launcher/Product.AppLauncher/Product.AppLauncher.csproj`
+- `templates/launcher/Product.AppLauncher/Program.cs`
+- `templates/launcher/Product.AppLauncher/README.md`
+- `templates/launcher/Product.AppLauncher/ServerManager.cs`
+- `templates/launcher/Product.AppLauncher/TrayApplicationContext.cs`
 - `templates/publish/publish.ps1`
+- `templates/validation/Test-PublishArtifact.ps1`

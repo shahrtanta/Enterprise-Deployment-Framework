@@ -1,10 +1,14 @@
 # Roadmap
 
-## 0.2
+## 0.2 — Completed
 - AppLauncher reference implementation.
+- Automated artifact validation.
+- GitHub Actions validation.
+
+## 0.3
 - ConfigTool and DbConnectionTester.
 - Extended Inno Setup database wizard.
-- Automated artifact validation.
+- Diagnostics and Repair tools.
 
 ## 0.3
 - Diagnostics and Repair tools.
